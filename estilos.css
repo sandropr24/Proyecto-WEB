@@ -108,3 +108,26 @@ body {
   padding-left: 14px;
   margin: 40px 0 18px;
 }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.formulario select {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+.formulario select option {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+.formulario select optgroup {
+  background-color: #020617;
+  color: #22c55e; 
+  font-weight: bold;
+}
