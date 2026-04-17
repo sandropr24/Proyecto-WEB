@@ -173,8 +173,26 @@ function crearTarjetas(categoria, contenedorId) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    crearTarjetas("accion", "contenedor-accion");
-    crearTarjetas("mundoAbierto", "contenedor-mundo-abierto");
-    crearTarjetas("terror", "contenedor-terror");
-    crearTarjetas("shooter", "contenedor-shooter");
+  crearTarjetas("accion", "contenedor-accion");
+  crearTarjetas("mundoAbierto", "contenedor-mundo-abierto");
+  crearTarjetas("terror", "contenedor-terror");
+  crearTarjetas("shooter", "contenedor-shooter");
+
+  const formulario = document.querySelector(".formulario");
+
+  formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    Swal.fire({
+      title: "¡Comentario enviado!",
+      text: "Gracias por tu comentario",
+      icon: "success",
+      confirmButtonText: "Aceptar",
+      confirmButtonColor: "#22c55e",
+      background: "#0f172a",
+      color: "#e2e8f0"
+    });
+
+    formulario.reset();
+  });
 });
