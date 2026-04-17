@@ -3,188 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game Trilogies</title>
+    <title>GAME TRILOGIES | Sandro Pachas</title>
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="cards.css" />
+    <link rel="stylesheet" href="navbar-footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
-
   <body>
-    <nav>
-      <div class="logo">🎮 GameTrilogies</div>
-      <div class="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#historia-general">Historia</a>
-        <a href="#trilogias">Trilogías</a>
-        <a href="#importancia">Importancia</a>
-        <a href="#formulario">Formulario</a>
-        <a href="#footer">Footer</a>
-      </div>
-    </nav>
+    <header id="inicio" class="hero">
+      <section class="hero-contenido">
+        <span class="etiqueta">GAME</span>
+        <h1>Las mejores trilogías de videojuegos</h1>
+        <p class="hero-texto">
+          Explora las sagas que definieron la industria. Desde la acción del
+          Renacimiento hasta los misterios de ciudades submarinas.
+        </p>
+        <a href="#historia" class="btn">EXPLORAR AHORA</a>
+      </section>
 
-    <header id="inicio" class="banner">
-      <h1>Las mejores trilogías de videojuegos</h1>
-      <p>Descubre sagas inolvidables que marcaron a generaciones.</p>
-      <a href="#trilogias" class="btn">Explorar</a>
+      <nav class="navbar" aria-label="Navegación principal">
+        <a href="#inicio">INICIO</a>
+        <a href="#historia">HISTORIA</a>
+        <a href="#accion">ACCIÓN</a>
+        <a href="#mundo-abierto">MUNDO ABIERTO</a>
+        <a href="#terror">TERROR</a>
+        <a href="#shooter">SHOOTER</a>
+        <a href="#formulario">CONTACTO</a>
+      </nav>
     </header>
 
-    <section id="historia-general" class="bloque-general">
-      <h2>Historia de las trilogías</h2>
-      <p>
-        Las trilogías permiten contar historias más completas en varias etapas,
-        mostrando evolución de personajes y mundos.
-      </p>
-    </section>
+    <main>
+      <section id="historia" class="seccion">
+        <header class="encabezado-seccion">
+          <h2>Historia de las trilogías</h2>
+          <p>
+            Las trilogías se volvieron populares porque permiten contar una
+            historia en varias etapas. Así, el jugador puede ver la evolución de
+            los personajes, la jugabilidad y el mundo del juego de una forma más
+            completa. Desde los años 90 hasta hoy, estas sagas han definido
+            generaciones enteras de jugadores alrededor del mundo.
+          </p>
+        </header>
+      </section>
 
-    <section id="trilogias" class="bloque-general">
-      <h2>Trilogías destacadas</h2>
+      <section id="accion" class="seccion">
+        <header class="encabezado-seccion">
+          <h2>🗡️ Acción / Aventura</h2>
+        </header>
+        <section id="contenedor-accion" class="grid-juegos"></section>
+      </section>
 
-      <h3 class="titulo-saga">Assassin’s Creed</h3>
+      <section id="mundo-abierto" class="seccion">
+        <header class="encabezado-seccion">
+          <h2>🌍 Mundo Abierto</h2>
+        </header>
+        <section id="contenedor-mundo-abierto" class="grid-juegos"></section>
+      </section>
 
-      <div class="game-card">
-        <img src="images/assasin creed.webp" />
-        <div class="game-info">
-          <div class="title-box">Assassin’s Creed II</div>
-          <div class="description-box">
-            Ezio Auditore, un joven noble de Florencia, ve su vida destruida
-            tras la ejecución injusta de su familia. Forzado al exilio, descubre
-            su herencia como Asesino y comienza una cacería épica por la Italia
-            del Renacimiento para eliminar a los conspiradores Templarios
-            liderados por Rodrigo Borgia. Con la ayuda de Leonardo da Vinci y el
-            uso de artefactos antiguos llamados Frutos del Edén, Ezio pasa de
-            buscar venganza personal a proteger el futuro de la humanidad.
-          </div>
-        </div>
-      </div>
+      <section id="terror" class="seccion">
+        <header class="encabezado-seccion">
+          <h2>👻 Terror / Survival</h2>
+        </header>
+        <section id="contenedor-terror" class="grid-juegos"></section>
+      </section>
 
-      <div class="game-card">
-        <img src="images/Assassin’s Creed Brotherhood.jpg" />
-        <div class="game-info">
-          <div class="title-box">Brotherhood</div>
-          <div class="description-box">
-            Tras el ataque a Monteriggioni, un Ezio Auditore más maduro viaja al
-            corazón de la corrupción: Roma. Bajo el dominio de la familia
-            Borgia, la ciudad agoniza. Ezio no solo debe eliminar a Césare
-            Borgia, sino que debe reconstruir la Hermandad de Asesinos desde
-            cero, reclutando ciudadanos para liberar la capital y asegurar el
-            Fruto del Edén. Es el paso definitivo de Ezio de simple asesino a
-            Mentor legendario.
-          </div>
-        </div>
-      </div>
+      <section id="shooter" class="seccion">
+        <header class="encabezado-seccion">
+          <h2>🎯 Shooter</h2>
+        </header>
+        <section id="contenedor-shooter" class="grid-juegos"></section>
+      </section>
 
-      <div class="game-card">
-        <img src="images/Assassin’s Creed Revelations.jpg" />
-        <div class="game-info">
-          <div class="title-box">Revelations</div>
-          <div class="description-box">
-            Un Ezio Auditore ya anciano y sabio viaja a Constantinopla siguiendo
-            los pasos de su antepasado, Altaïr Ibn-La'Ahad. En busca de cinco
-            llaves para abrir la biblioteca perdida de Masyaf, Ezio se ve
-            envuelto en una guerra civil entre Otomanos y Bizantinos. No es solo
-            una lucha por el poder, sino una búsqueda de respuestas sobre el
-            origen de la Orden y su propósito en la historia, cerrando el
-            círculo entre el pasado, el presente y el futuro.
-          </div>
-        </div>
-      </div>
+      <section id="formulario" class="seccion">
+        <header class="encabezado-seccion">
+          <h2>Formulario de contacto</h2>
+          <p>Déjanos tu opinión y dinos cuál es tu trilogía favorita.</p>
+        </header>
 
-      <h3 class="titulo-saga">Tomb Raider</h3>
+        <form class="formulario">
+          <fieldset>
+            <legend>Datos de contacto y opinión</legend>
 
-      <div class="game-card">
-        <img src="images/tom raider.jpg" />
-        <div class="game-info">
-          <div class="title-box">Tomb Raider</div>
-          <div class="description-box">
-            Lara Croft, una joven e inexperta arqueóloga, naufraga en la
-            misteriosa isla de Yamatai, en el Triángulo del Dragón. Lo que
-            empieza como una expedición científica se convierte en una lucha
-            brutal por la supervivencia contra una secta sanguinaria y fuerzas
-            sobrenaturales. En esta entrega, Lara deja atrás la inocencia,
-            aprende a cazar y a matar, y da sus primeros pasos para convertirse
-            en la saqueadora de tumbas que el mundo conoce.
-          </div>
-        </div>
-      </div>
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
 
-      <div class="game-card">
-        <img src="images/Rise of the Tomb Raider.jpg" />
-        <div class="game-info">
-          <div class="title-box">Rise</div>
-          <div class="description-box">
-            Tras los eventos de Yamatai, Lara Croft se obsesiona con limpiar el
-            nombre de su padre y encontrar la legendaria ciudad de Kitezh en las
-            gélidas montañas de Siberia. Allí busca la "Fuente Divina", un
-            artefacto que promete la inmortalidad. Sin embargo, no está sola: la
-            organización paramilitar Trinity hará lo que sea por obtener ese
-            poder. Lara deberá dominar el entorno y aceptar su destino como una
-            verdadera saqueadora de tumbas.
-          </div>
-        </div>
-      </div>
+            <div class="campo">
+              <label for="correo">Correo</label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="Tu correo"
+                required
+              />
+            </div>
 
-      <div class="game-card">
-        <img src="images/Shadow of the Tomb Raider.jpg" />
-        <div class="game-info">
-          <div class="title-box">Shadow</div>
-          <div class="description-box">Final de la trilogía.</div>
-        </div>
-      </div>
+            <div class="campo">
+              <label for="trilogia">Trilogía favorita</label>
+              <select id="trilogia" name="trilogia" required>
+                <option value="">Selecciona una opción</option>
+                <optgroup label="Acción / Aventura">
+                  <option value="assassins-creed">Assassin's Creed</option>
+                  <option value="tomb-raider">Tomb Raider</option>
+                  <option value="uncharted">Uncharted</option>
+                  <option value="batman-arkham">Batman Arkham</option>
+                </optgroup>
+                <optgroup label="Mundo Abierto">
+                  <option value="just-cause">Just Cause</option>
+                  <option value="far-cry">Far Cry</option>
+                  <option value="mafia">Mafia</option>
+                </optgroup>
+                <optgroup label="Terror / Survival">
+                  <option value="resident-evil">Resident Evil</option>
+                  <option value="bioshock">BioShock</option>
+                  <option value="metro">Metro</option>
+                </optgroup>
+                <optgroup label="Shooter">
+                  <option value="halo">Halo</option>
+                  <option value="gears-of-war">Gears of War</option>
+                </optgroup>
+              </select>
+            </div>
 
-      <h3 class="titulo-saga">Just Cause</h3>
+            <div class="campo">
+              <label for="mensaje">Comentario</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Escribe tu opinión sobre estas sagas..."
+                rows="5"
+                required
+              ></textarea>
+            </div>
 
-      <div class="game-card">
-        <img src="images/just cause.jpg" />
-        <div class="game-info">
-          <div class="title-box">Just Cause</div>
-          <div class="description-box">Inicio del caos.</div>
-        </div>
-      </div>
+            <button type="submit" class="btn">ENVIAR COMENTARIO</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
 
-      <div class="game-card">
-        <img src="images/just cause2.jpg" />
-        <div class="game-info">
-          <div class="title-box">Just Cause 2</div>
-          <div class="description-box">Más acción.</div>
-        </div>
-      </div>
-
-      <div class="game-card">
-        <img src="images/just cuase3.avif" />
-        <div class="game-info">
-          <div class="title-box">Just Cause 3</div>
-          <div class="description-box">Acción máxima.</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="importancia" class="bloque-general">
-      <h2>Importancia</h2>
-      <p>Historias profundas y evolución de personajes.</p>
-    </section>
-
-    <section id="formulario" class="bloque-general">
-      <h2>Formulario</h2>
-
-      <form class="formulario">
-        <input type="text" placeholder="Nombre" required />
-        <input type="email" placeholder="Correo" required />
-
-        <select required>
-          <option value="">Selecciona trilogía</option>
-          <option>Assassin’s Creed</option>
-          <option>Tomb Raider</option>
-          <option>Just Cause</option>
-        </select>
-
-        <textarea placeholder="Tu opinión..." required></textarea>
-
-        <button class="btn">Enviar</button>
-      </form>
-    </section>
-
-    <footer id="footer">
-      <h3>🎮 Game Trilogies</h3>
-      <p>Email: sandroromanipr24@gmail.com</p>
-      <p>© 2026</p>
+    <footer class="footer">
+      <h3>GAME TRILOGIES</h3>
+      <address class="redes">
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </address>
+      <p class="copy">© 2026 Game Trilogies - Sandro Pachas Romaní</p>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
